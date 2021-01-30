@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Anasayfa";
+    string metin = "Anasayfa";
+}
+
+<h2>@metin</h2>
+
+<p>Burası anasayfa ilk mvc sayfamız </p>
+
+
+@section footer{
+    <b>
+        Burası anasayfa ama bu içeriği layout sayfasında rendersectionu eklediğimiz yerde göstertebiliyoruz. Sectiona verdiğimiz isim önemli burada footer ismi verdik ve render sectionda da footer ismini kullanmalıyız yoksa buradaki yazıyı layout da gösteremeyiz
+    </b>
+}
