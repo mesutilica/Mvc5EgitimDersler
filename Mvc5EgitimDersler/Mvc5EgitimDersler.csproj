@@ -94,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Ders02IsPostController.cs" />
+    <Compile Include="Controllers\Ders03HttpUtilityController.cs" />
+    <Compile Include="Controllers\Ders04StringFormatKullanimiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Global.asax.cs">
@@ -110,6 +113,9 @@
     <Content Include="Views\Home\Hakkimizda.cshtml" />
     <Content Include="Views\Home\Iletisim.cshtml" />
     <Content Include="Views\Kategori\Index.cshtml" />
+    <Content Include="Views\Ders02IsPost\Index.cshtml" />
+    <Content Include="Views\Ders03HttpUtility\Index.cshtml" />
+    <Content Include="Views\Ders04StringFormatKullanimi\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

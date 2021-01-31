@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Mvc de HttpUtility Kullanımı";
+    Layout = null;
+}
+
+<h2>Mvc de HttpUtility Kullanımı</h2>
+
+@{
+    string baslik = "<h1>Mcpd Yazılım Uzmanlığı Eğitimi</h1>";
+    string baslik2 = HttpUtility.HtmlEncode(baslik);
+    string baslik3 = HttpUtility.HtmlDecode(baslik2);
+    <div>baslik değişkeninin direk yazımı :</div>
+    @baslik
+    <br />
+    <div>baslik değişkeninin HttpUtility.HtmlEncode ile kodlanmmış yazımı :</div>
+    @baslik2
+    <br />
+    <div>baslik değişkeninin HttpUtility.HtmlDecode ile yazımı :</div>
+    @baslik3
+    <br />
+    @Html.Raw(baslik)
+    <div>Html.Raw metoduyla html kodlarını içeren içeriklerimizi ekrana html kodlarını çalıştıracak şekilde yazdırabiliriz.</div>
+}

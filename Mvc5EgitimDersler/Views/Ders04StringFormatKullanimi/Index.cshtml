@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Mvc de String.Format Kullanımı";
+    Layout = null;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>Mvc de string.format kullanarak tarihsel ve sayısal çıktıları formatlayarak kullanabiliriz.</p>
+
+<h1>Tarih Formatları</h1>
+@{
+    DateTime tarih = DateTime.Now;//new DateTime(2021, 01, 01, 10, 30, 45);
+
+    @("dd : " + String.Format("{0:dd}", tarih)) <hr />
+    @("ddd : " + String.Format("{0:ddd}", tarih)) <hr />
+    @("dddd : " + String.Format("{0:dddd}", tarih)) <hr />
+    @("MM : " + String.Format("{0:MM}", tarih)) <hr />
+    @("MMM : " + String.Format("{0:MMM}", tarih)) <hr />
+    @("MMMM : " + String.Format("{0:MMMM}", tarih)) <hr />
+    @("yy : " + String.Format("{0:yy}", tarih)) <hr />
+    @("yyyy : " + String.Format("{0:yyyy}", tarih)) <hr />
+    @("hh : " + String.Format("{0:hh}", tarih)) <hr />
+    @("HH : " + String.Format("{0:HH}", tarih)) <hr />
+    @("mm : " + String.Format("{0:mm}", tarih)) <hr />
+    @("ss : " + String.Format("{0:ss}", tarih)) <hr />
+    @("t : " + String.Format("{0:t}", tarih)) <hr />
+    @("d : " + String.Format("{0:d}", tarih)) <hr />
+    @("T : " + String.Format("{0:T}", tarih)) <hr />
+    @("D : " + String.Format("{0:D}", tarih)) <hr />
+    @("f : " + String.Format("{0:f}", tarih)) <hr />
+    @("F : " + String.Format("{0:F}", tarih)) <hr />
+    @("g : " + String.Format("{0:g}", tarih)) <hr />
+    @("G : " + String.Format("{0:G}", tarih)) <hr />
+    @("m : " + String.Format("{0:m}", tarih)) <hr />
+    @("y : " + String.Format("{0:y}", tarih)) <hr />
+    @("r : " + String.Format("{0:r}", tarih)) <hr />
+    @("s : " + String.Format("{0:s}", tarih)) <hr />
+    @("u : " + String.Format("{0:u}", tarih))
+
+}

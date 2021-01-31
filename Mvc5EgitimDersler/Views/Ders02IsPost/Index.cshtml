@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "MVC De IsPost Kullanımı";
+
+    Layout = null; /* Sayfada master page olarak kullanılan layout şablonunu kullanmak istemezsek layout a null değeri vererek bunu sağlayabiliriz */
+
+    string postMesaji = "";
+    if (IsPost)
+    {
+        postMesaji = "Post işlemi gerçekleşti";
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+    <input type="submit" value="Çalıştır" />
+    <br />
+    @postMesaji
+</form>
