@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Mvc de Html Partial Kullanımı";
+}
+
+<h2>Mvc de Html Partial Kullanımı</h2>
+
+<p>Mvc de Web formdaki .ascx uzantılı user control ların yerine Mvc de partial ler kullanılır</p>
+
+<p>Partial sayfa içerisindeki bir parçayı ifade eder</p>
+
+<p>Partial ler tek başına bir sayfa gibi çalışmaz, bunun yerine bir sayfanın içerisindeki bir bölümü oluşturur ve bu bölümü bir kez partial olarak oluşturduktan sonra aynı partiali istediğimiz tüm sayfalarda kullanabiliriz.</p>
+
+@Html.Partial("_UstMenu")

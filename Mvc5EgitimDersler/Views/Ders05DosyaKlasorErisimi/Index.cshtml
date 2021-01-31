@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Mvc ile Dosya ve Klasör Erişimi";
+    Layout = null;
+    string resimYolu = Server.MapPath("~/Resimler/Manzara.jpg");
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>Sürükle bırakla eklediğimiz resim</h3>
+<img src="~/Resimler/Manzara.JPG" />
+
+<h3>resimYolu değişkeni kullanarak</h3>
+<img src="@resimYolu" />
+
+<h3>Href Kullanımı</h3>
+@Href("Manzara.jpg")
+
+<img src="@Href("Manzara.jpg")" />

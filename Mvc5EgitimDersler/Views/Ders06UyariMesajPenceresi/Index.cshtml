@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Mvc de Uyarı Penceresi Kullanımı";
+
+    Layout = null;
+
+    string mesajKutusu = "";
+
+    if (IsPost)
+    {
+        mesajKutusu = "<script lang='JavaScript'>alert('Butona Tıkladınız');</script>";
+    }
+}
+
+<h2>Mvc de Uyarı Penceresi Kullanımı</h2>
+
+<form method="post">
+    <input type="submit" value="Tıkla" />
+    @Html.Raw(mesajKutusu)
+</form>

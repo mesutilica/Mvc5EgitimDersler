@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Resimler\Manzara.JPG" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +98,10 @@
     <Compile Include="Controllers\Ders02IsPostController.cs" />
     <Compile Include="Controllers\Ders03HttpUtilityController.cs" />
     <Compile Include="Controllers\Ders04StringFormatKullanimiController.cs" />
+    <Compile Include="Controllers\Ders05DosyaKlasorErisimiController.cs" />
+    <Compile Include="Controllers\Ders06UyariMesajPenceresiController.cs" />
+    <Compile Include="Controllers\Ders07PartialKullanimiController.cs" />
+    <Compile Include="Controllers\Ders08ViewaVeriTasimaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Global.asax.cs">
@@ -116,6 +121,11 @@
     <Content Include="Views\Ders02IsPost\Index.cshtml" />
     <Content Include="Views\Ders03HttpUtility\Index.cshtml" />
     <Content Include="Views\Ders04StringFormatKullanimi\Index.cshtml" />
+    <Content Include="Views\Ders05DosyaKlasorErisimi\Index.cshtml" />
+    <Content Include="Views\Ders06UyariMesajPenceresi\Index.cshtml" />
+    <Content Include="Views\Ders07PartialKullanimi\Index.cshtml" />
+    <Content Include="Views\Shared\_UstMenu.cshtml" />
+    <Content Include="Views\Ders08ViewaVeriTasima\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

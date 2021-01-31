@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ders08 Controller dan Viewa Veri Tasima</title>
+</head>
+<body>
+    @Html.Partial("_UstMenu")
+    <h1>Controllerdan Viewa Veri Taşıma</h1>
+    <p>
+        Mvc de Controller da üretilen bir veriyi farklı yöntemlerle View a gönderebiliriz. <br />
+        En basit yöntemler ViewBag, ViewData, TempData kullanımıdır. <br />
+        Bir değişkenin değerini ya da veritabanından çektiğimiz bir veriyi sayfa ön yüzünde bu yöntemlerle gösterebiliriz.
+    </p>
+    <div>
+        <h2>
+            Ürün Bilgileri
+        </h2>
+        <div>
+            <b>Kategorı Adı :</b>  @ViewBag.KategoriAdi
+        </div>
+        <div>
+            <b>Ürün Adı : </b> @ViewData["UrunAdi"]
+        </div>
+        <div>
+            <b>Ürün Fiyatı : </b> @TempData["UrunFiyati"]
+        </div>
+        <div>
+            <img src="~/Resimler/@ViewBag.UrunResmi" height="300" />
+        </div>
+    </div>
+</body>
+</html>
