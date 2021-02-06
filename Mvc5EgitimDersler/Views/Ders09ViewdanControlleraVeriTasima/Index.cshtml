@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Ders09 Viewdan Controllera Veri Taşıma";
+}
+
+<h2>Ders09 Viewdan Controllera Veri Taşıma</h2>
+
+@{
+    SelectListItem[] liste = new SelectListItem[4]
+    {
+       new SelectListItem() { Text="Mesut"  },
+       new SelectListItem() { Text="Ünal"  },
+       new SelectListItem() { Text="Emrah"  },
+       new SelectListItem() { Text="Melih"  }
+                                                    };
+
+    using (Html.BeginForm())//Html.BeginForm() metodu sayfamızda sunucuya veri yollayabilmemiz için gereken bir form oluşturmamızı sağlar. Ekranda içinde aşağıdaki içerikler olan bir <form></form> html elementi oluşturur. Form elementleri de sunucuya veri yollamaya yarayan elementlerdir
+    {
+        @Html.TextBox("text1")//Ekranda oluşturulan form elementinin içine bir textbox oluşturur
+        <br />
+        @Html.DropDownList("list1", liste)//Ekranda oluşturulan form elementinin içine bir dropdownlist(aşağı açılan menü) oluşturur
+        <br />
+        @Html.CheckBox("check1") @("Onaylıyorum")//Ekranda oluşturulan form elementinin içine bir CheckBox(Tik le onaylanan kontrol) oluşturur
+        <hr />
+        <input type="submit" value="Verileri Gönder" />
+        //Buton oluşturur verileri göndermek için
+    }
+    <hr />
+    if (TempData["text1Veri"] != null)
+    {
+        <hr />
+        @TempData["text1Veri"]
+    }
+    if (TempData["list1Veri"] != null)
+    {
+        <hr />
+        @TempData["list1Veri"]
+    }
+    if (TempData["check1Veri"] != null)
+    {
+        <hr />
+        @TempData["check1Veri"]
+    }
+
+}

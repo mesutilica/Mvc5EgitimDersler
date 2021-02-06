@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Mvc5EgitimDersler.Models.Ogrenci>
+@{
+    ViewBag.Title = "Listele";
+}
+
+<h2>Listele</h2>
+
+<table>
+    <tr>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>TC Kimlik No</th>
+        <th>Bolum Adı</th>
+        <th>Giriş Yılı</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Ad</td>
+            <td>@item.Soyad</td>
+            <td>@item.TCKimlikNo</td>
+            <td>@item.BolumAd</td>
+            <td>@item.GirisYil</td>
+        </tr>
+    }
+
+</table>
