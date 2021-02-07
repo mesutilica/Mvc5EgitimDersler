@@ -105,11 +105,14 @@
     <Compile Include="Controllers\Ders09ViewdanControlleraVeriTasimaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\KisiController.cs" />
     <Compile Include="Controllers\OgrenciController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Kisi.cs" />
     <Compile Include="Models\Ogrenci.cs" />
+    <Compile Include="Models\UyeGiris.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Veri\OgrenciVeri.cs" />
   </ItemGroup>
@@ -133,6 +136,9 @@
     <Content Include="Views\Ders09ViewdanControlleraVeriTasima\Index.cshtml" />
     <Content Include="Views\Ogrenci\Listele.cshtml" />
     <Content Include="Views\Ogrenci\Yeni.cshtml" />
+    <Content Include="Views\Ogrenci\Duzenle.cshtml" />
+    <Content Include="Views\Ogrenci\Sil.cshtml" />
+    <Content Include="Views\Kisi\Yeni.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
